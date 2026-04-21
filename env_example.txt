@@ -1,0 +1,12 @@
+# Copy to .env and fill in from a logged-in x.com browser session.
+#
+# How to get cookies:
+#   1. Go to https://x.com and log in.
+#   2. Open DevTools (F12) → Application → Cookies → https://x.com
+#   3. Copy the values for `ct0` and `auth_token`.
+#
+# ct0 is the LONG (~160 chars) cookie. auth_token is the SHORT (~40 chars)
+# cookie. Don't swap them — Twitter silently rejects with a 401.
+
+TWITTER_CT0=your_ct0_cookie_here
+TWITTER_AUTH_TOKEN=your_auth_token_cookie_here
